@@ -54,7 +54,6 @@ local GetPlayers = __index(Players, "GetPlayers")
 
 local RequiredDistance, Typing, Running, ServiceConnections, Animation, OriginalSensitivity = 2000, false, false, {}
 local Connect, Disconnect = __index(game, "DescendantAdded").Connect
-local Parts = {"Head", "HumanoidRootPart", "Torso"}
 
 --[[
 local Degrade = false
@@ -108,7 +107,7 @@ getgenv().ExunysDeveloperAimbot = {
 		Sensitivity2 = 3.5, -- mousemoverel Sensitivity
 
 		LockMode = 1, -- 1 = CFrame; 2 = mousemoverel
-		LockPart = Parts, -- Body part to lock on
+		LockPart = Head, -- Body part to lock on
 
 		TriggerKey = Enum.KeyCode.X,
 		Toggle = false
